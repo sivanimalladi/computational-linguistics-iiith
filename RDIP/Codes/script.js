@@ -41,6 +41,8 @@ function englishtext(){
         }
         reForm.type="button";
         reForm.value="Reform Sentence";
+        checkSentence.type="button";
+        checkSentence.value="Check correctness of the sentence";
         
         for(i=0;i<ranList.length;i++)
             buttons1.push(0);
@@ -58,6 +60,10 @@ function englishtext(){
                 sp.innerHTML=str;
                 d.append(sp);
                 d.append(reForm);
+               if(count==size){
+                    d.append(checkSentence);
+                    checkSentence.style.display="inline";
+                }
                 reForm.style.display="inline";
                 this.style.display="none";
             }
@@ -104,6 +110,8 @@ function Hinditext(){
     }
     reForm.type="button";
     reForm.value="Reform Sentence";
+checkSentence.type="button";
+    checkSentence.value="Check correctness of the sentence";
     for(i=0;i<ranList.length;i++)
         buttons2.push(0);
     for(i=0;i<ranList.length;i++){
@@ -120,6 +128,10 @@ h.innerHTML="Formed Sentence(After Selecting words)";
             sp.innerHTML=str;
             d.append(sp);
             d.append(reForm);
+              if(count==size){
+                d.append(checkSentence);
+                checkSentence.style.display="inline";
+            }
             
             reForm.style.display="inline";
             this.style.display="none";
