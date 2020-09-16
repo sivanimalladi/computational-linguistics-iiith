@@ -1,4 +1,11 @@
-
+function check(array,element){
+ for(i=0;i<array.length;i++){
+  if(array[i]+" "==element){
+   return true;
+     }
+   }
+ return false;
+}
 function englishtext(){
     var corpusEng=[["John ate an apple before afternoon","before afternoon John ate an apple","John before afternoon ate an apple"],
             ["some students like to study in the night","at night some students like to study"],
@@ -68,7 +75,33 @@ function englishtext(){
                 this.style.display="none";
             }
             d.appendChild(buttons1[i]);
-        }        
+        }       
+checkSentence.onclick=function(){
+     var sentence=sp.innerHTML;
+     show.type="button";
+     show.value="GET CORRECT SENTENCE";
+     if(check(crct,sentence))
+        {
+         ans.innerHTML="Right answer!!!";
+         ans.style.color="green";
+        }
+      else{
+          ans.innerHTML="Wrong answer!!!";
+          d.append(show);
+          show.style.display="inline";
+          ans.style.color="red";
+          }
+      this.style.display="none";
+      d.append(ans);
+      ans.style.display="block";
+        }
+ show.onclick=function(){
+ for(i=0;i<crct.length;i++){
+     answers.innerHTML+=crct[i]+"<br>";
+     }
+ d.append(answers);
+   answers.style.display="block";
+  } 
 }
 function Hinditext(){
     corpusHin=[["राम और श्याम बाजार गयें","राम और श्याम गयें बाजार","बाजार गयें राम और श्याम","गयें बाजार राम और श्याम"],
@@ -138,6 +171,34 @@ h.innerHTML="Formed Sentence(After Selecting words)";
         }
         d.appendChild(buttons2[i]);
     }  
+checkSentence.onclick=function(){
+ var sentence=sp.innerHTML;
+ show.type="button";
+ show.value="GET CORRECT SENTENCE";
+ if(check(crct,sentence))
+   {
+   ans.innerHTML="Right answer!!!";
+   ans.style.color="green";
+   }
+   else
+     {
+       ans.innerHTML="Wrong answer!!!";
+       d.append(show);
+       show.style.display="inline";
+       ans.style.color="red";
+      }
+     this.style.display="none";
+     d.append(ans);
+     ans.style.display="block";
+    }
+    show.onclick=function(){
+    for(i=0;i<crct.length;i++)
+      {
+     answers.innerHTML+=crct[i]+"<br>";
+       }
+      d.append(answers);
+      answers.style.display="block";
+    }
 }
 function formed(){
     var lan=document.getElementById("lang").value;
