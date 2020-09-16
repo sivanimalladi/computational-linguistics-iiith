@@ -62,8 +62,7 @@ function englishtext(){
                 this.style.display="none";
             }
             d.appendChild(buttons1[i]);
-        }
-        
+        }        
 }
 function Hinditext(){
     corpusHin=[["राम और श्याम बाजार गयें","राम और श्याम गयें बाजार","बाजार गयें राम और श्याम","गयें बाजार राम और श्याम"],
@@ -126,13 +125,8 @@ h.innerHTML="Formed Sentence(After Selecting words)";
             this.style.display="none";
         }
         d.appendChild(buttons2[i]);
-    }
-   
-    
+    }  
 }
-
-
-
 function formed(){
     var lan=document.getElementById("lang").value;
     if(lan=="eng"){
@@ -151,6 +145,5 @@ function formed(){
     else{
         document.getElementById("hind").style.display="none";
         document.getElementById("engl").style.display="none";
-
     }
 }
