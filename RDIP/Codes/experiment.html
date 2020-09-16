@@ -8,14 +8,15 @@
     <body>
 <h1>Experiment:</h1>
         <center><h2>Forming Sentences-2</h2>
-        <select id="lang" onchange="language()">
-            <option value="none" selected disabled>--Select language--</option>
-            <option value="english">English</option>
-            <option value="hindi">Hindi</option>
-        </select>
-        <br><br>
+       <select id="lang" onchange="formed()">
+            <option value="">---Select Language---</option>
+            <option value="eng">English</option>
+            <option value="hin">Hindi</option>
+        </select>   <br><br>
         <p style="color:#0000AA;font-size:16px;" id="ex"></p>
- <div id="buttons"></div>
-</center>
+        
+        <p id="lang"></p>
+        <div id="engl"></div>
+        <div id="hind"></div>
     </body>
-</html>  
+</html>
