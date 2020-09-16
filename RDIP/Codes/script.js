@@ -1,5 +1,5 @@
 function check(array,element){
- for(i=0;i<array.length;i++){
+for(i=0;i<array.length;i++){
   if(array[i]+" "==element){
    return true;
      }
