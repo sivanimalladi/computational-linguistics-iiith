@@ -12,3 +12,7 @@ its master's knee. It is not fair." Then the donkey said to himself, "If I do wh
 wagged its tail so hard that it knocked over a jar on the table. Then it tried to jump on to its master's knee. The master thought the donkey was mad, and he shouted, "Help! Help!" Men came running 
 in with sticks, and they beat the donkey till it ran out of the house, and they drove it back to the field. "I only did what the dog does," said the donkey," and yet they make a pet of the dog, and 
 they beat me with sticks. It is not fair."]];
+function text(){
+
+    document.getElementById("ex2").innerHTML="<b>Enter the correct number of tokens and types from the corpus</b>";
+    }
