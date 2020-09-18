@@ -1,0 +1,6 @@
+In this experiment i understood is:
+*Basically there will be 3 corpuses like:corpus 1,corpus 2 and corpus 3 in the select memu(Select a corpus).).
+*On selecting any one of the corpus among three we will get some matter and 2 lables to enter no.of tokens,type and a submit button. 
+*Basically Tokens correspond to the total number of word counts in a text while type corresponds to the total count of unique words in a text. 
+*We can say that language consists of various types of words and all the particular instances of these words are called tokens.
+*if we enter wrong number of tokens and type we get "Wrong Answer" message else it shows "Correct Answer" message.
